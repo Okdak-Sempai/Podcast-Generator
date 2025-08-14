@@ -1,0 +1,23 @@
+{
+  "titre": "Leveraging External Data in ASR",
+  "auteur": "Le D",
+  "date": "2025-04-26",
+  "lang": "en"
+}
+
+[# Michelle : excited : 1] "Melissa, we've just seen a significant reduction in Word Error Rate using the cone-based similarity approach. Now, I'm eager to build on this success."
+[# Melissa : thoughtful : 2] "That's great, Michelle. Janiszek and De Mori have taken it a step further with 'Selective Corpus Interpolation'. It seems we can leverage external data without diluting our domain-specific gains."
+[# Michelle : inquisitive : 3] "How does that work exactly? We don't want to introduce irrelevant probabilities, right?"
+[# Melissa : explanatory : 4] "Exactly. Instead of interpolating all augmented counts globally, they focus on specific contexts where it's most beneficial. For instance, low-frequency words or out-of-domain terms."
+[# Michelle : curious : 5] "And how do we decide the interpolation weight for these contexts?"
+[# Melissa : detailed : 6] "The weight can be adjusted based on factors like word frequency in the external corpus, relevance to our domain, or confidence in augmented probabilities. It's a selective process that aims to maximize improvement."
+[# Michelle : impressed : 7] "That's clever. And their results?"
+[# Melissa : impressed : 8] "Their experiments showed a total WER reduction of 11.7%. That's more than just global count interpolation alone."
+[# Michelle : reflective : 9] "It seems careful selection when leveraging external data is key, especially in tasks with topic-dependent probabilities. Let's consider these aspects as we move forward."
+[# Michelle : thoughtful : 10] After exploring these data augmentation and adaptation techniques, it's clear they've significantly improved ASR performance. But let's think ahead, Melissa. What do you see as the next steps?
+[# Melissa : excited : 11] Great question, Michelle! I believe we should first look into generalizing these methods to other domains. We've proven their effectiveness in spoken dialogue systems, but what about other ASR tasks or even NLP? The possibilities are vast!
+[# Michelle : nodding : 12] Absolutely. And as datasets grow, scalability and efficiency will become critical. We might need to explore algorithmic optimizations or distributed computing strategies to keep up with the data deluge.
+[# Melissa : agreeing : 13] Exactly! Plus, think about multimodal adaptation. Incorporating visual or temporal information could enhance language models even further. It'll be fascinating to extend our understanding of semantic similarity to these settings.
+[# Michelle : pensive : 14] Indeed. Also, dynamic adaptation is key for real-world applications. We need techniques that allow models to learn and adapt continuously to changing environments or user preferences.
+[# Melissa : note-taking : 15] Definitely! And lastly, Michelle, while these methods improve performance, understanding how they work at a deeper level remains a challenge. Exploring interpretability and explainability could give us valuable insights into their inner workings.
+[# Michelle : smiling : 16] You've hit the nail on the head, Melissa. It's an exciting journey ahead, full of potential breakthroughs in speech recognition and beyond!

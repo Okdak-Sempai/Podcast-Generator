@@ -1,0 +1,23 @@
+{
+  "titre": "Le faux médecin",
+  "auteur": "Molière (extrait adapté)",
+  "date": "2025-04-07",
+  "lang": "fr"
+}
+[# Toinette : moqueur : 1] Monsieur Purgon m'a dit que je trouverais ici un malade.
+[# Argan : inquiet : 2] Oui, je suis bien mal.
+[# Toinette : sarcastique : 3] Tant mieux, cela montre que votre corps réagit.
+[# Argan : doutant : 4] Comment cela ?
+[# Toinette : moqueur : 5] Un corps qui ne réagit pas est un corps sans espoir.
+[# Argan : dramatique : 6] Mais je souffre beaucoup.
+[# Toinette : posé : 7] La souffrance est le chemin de la guérison.
+[# Argan : irrité : 8] Vous croyez ?
+[# Toinette : sarcastique : 9] Absolument. Plus vous souffrez, plus vous êtes vivant.
+[# Argan : grave : 10] C'est une étrange consolation.
+[# Toinette : moqueur : 11] La médecine est une science pleine de paradoxes.
+[# Argan : doutant : 12] Que me conseillez-vous alors ?
+[# Toinette : posé : 13] De continuer à souffrir patiemment.
+[# Argan : irrité : 14] N'avez-vous pas de remède à me donner ?
+[# Toinette : sarcastique : 15] Si, mais ils prolongeraient votre souffrance.
+[# Argan : résigné : 16] Je préfère encore cela que de mourir.
+[# Toinette : moqueur : 17] Voilà une sage décision.

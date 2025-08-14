@@ -1,0 +1,143 @@
+{
+    "__comment__": "Fichier tone_presets.json. Définit les tons utilisés pour la synthèse vocale XTTS-v2. Chaque ton contient un speed (vitesse) et une emotion (happy, sad, neutral, angry). Modifiable dynamiquement via TonePresetManager.py ou manuellement.",
+    "neutre": {
+        "speed": 1.0,
+        "emotion": "neutral"
+    },
+    "calme": {
+        "speed": 0.95,
+        "emotion": "neutral"
+    },
+    "posé": {
+        "speed": 0.9,
+        "emotion": "sad"
+    },
+    "solennel": {
+        "speed": 0.9,
+        "emotion": "neutral"
+    },
+    "confident": {
+        "speed": 1.05,
+        "emotion": "neutral"
+    },
+    "joyeux": {
+        "speed": 1.1,
+        "emotion": "happy"
+    },
+    "enthousiaste": {
+        "speed": 1.2,
+        "emotion": "happy"
+    },
+    "surpris": {
+        "speed": 1.3,
+        "emotion": "happy"
+    },
+    "narquois": {
+        "speed": 1.15,
+        "emotion": "happy"
+    },
+    "débile": {
+        "speed": 1.3,
+        "emotion": "happy"
+    },
+    "triste": {
+        "speed": 0.85,
+        "emotion": "sad"
+    },
+    "dramatique": {
+        "speed": 0.85,
+        "emotion": "sad"
+    },
+    "inquiet": {
+        "speed": 0.95,
+        "emotion": "sad"
+    },
+    "chuchoté": {
+        "speed": 0.8,
+        "emotion": "sad"
+    },
+    "épuisé": {
+        "speed": 0.75,
+        "emotion": "sad"
+    },
+    "blasé": {
+        "speed": 0.85,
+        "emotion": "sad"
+    },
+    "sérieux": {
+        "speed": 0.85,
+        "emotion": "angry"
+    },
+    "colérique": {
+        "speed": 1.0,
+        "emotion": "angry"
+    },
+    "irrité": {
+        "speed": 1.2,
+        "emotion": "angry"
+    },
+    "épique": {
+        "speed": 1.0,
+        "emotion": "angry"
+    },
+    "intense": {
+        "speed": 1.15,
+        "emotion": "angry"
+    },
+    "intrigué": {
+        "speed": 1.05,
+        "emotion": "happy"
+    },
+    "interloqué": {
+        "speed": 1.1,
+        "emotion": "sad"
+    },
+    "choqué": {
+        "speed": 1.2,
+        "emotion": "angry"
+    },
+    "doutant": {
+        "speed": 0.95,
+        "emotion": "sad"
+    },
+    "sarcastique": {
+        "speed": 1.1,
+        "emotion": "angry"
+    },
+    "moqueur": {
+        "speed": 1.2,
+        "emotion": "happy"
+    },
+    "robotique": {
+        "speed": 0.8,
+        "emotion": "neutral"
+    },
+    "rapide": {
+        "speed": 1.3,
+        "emotion": "neutral"
+    },
+    "lent": {
+        "speed": 0.7,
+        "emotion": "neutral"
+    },
+    "distant": {
+        "speed": 0.9,
+        "emotion": "neutral"
+    },
+    "accusateur": {
+        "speed": 1.15,
+        "emotion": "angry"
+    },
+    "théâtral": {
+        "speed": 1.1,
+        "emotion": "happy"
+    },
+    "grave": {
+        "speed": 0.9,
+        "emotion": "angry"
+    },
+    "résigné": {
+        "speed": 0.8,
+        "emotion": "sad"
+    }
+}

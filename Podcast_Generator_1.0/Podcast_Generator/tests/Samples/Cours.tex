@@ -1,0 +1,238 @@
+\documentclass[a4paper]{article}
+\usepackage{lscape}
+\usepackage{graphicx,wrapfig}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper,left=0.8cm,right=0.8cm,top=1.5cm,bottom=1cm]{geometry}
+\usepackage{float}
+\usepackage{multicol}
+\usepackage{fancyvrb} %Verbatims Encadrés
+\usepackage{tabularx}
+\usepackage[version=4]{mhchem}
+\pagenumbering{gobble}
+
+\renewcommand{\figurename}{Doc.}
+\setlength{\columnsep}{0.1cm}
+
+
+\begin{document}
+\begin{LARGE}
+\begin{center}
+Enseignement Scientifique - Réforme 2023\\
+Sciences Physiques\\[0.2cm]
+\hrule
+\vspace*{0.2cm}
+Chapitre 1
+\end{center}
+\end{LARGE}
+
+\begin{Large}
+\noindent Un \underline{être vivant} est composé \underline{d'organes}, qui sont eux-mêmes faits de \underline{tissus}. Les tissus sont un assemblage de \underline{cellules}, qui sont formées par des \underline{molécules}. Enfin, les molécules sont simplement des \underline{atomes} mis ensemble. Dans les atomes, il y a des composants plus petits.
+\section*{A] Structure de l'Atome}
+Un atome (taille $\sim 10^{-10}$ m) est constitué d'un noyau ($\sim 10^{-15}$ m) et d'électrons présents autour du noyau. Ca veut dire que le noyau est $10\,000$ fois plus petit que l'atome.\\
+\begin{minipage}{0.35\textwidth}
+\includegraphics[scale=0.5]{atome.png}
+\end{minipage}
+\begin{minipage}{0.65\textwidth}
+\begin{itemize}
+\item Noyau : Composé de \underline{$Z$ \textbf{protons} ($+$)} et de \underline{$(A-Z)$ \textbf{neutrons}}. Leurs taille et masse similaires nous invitent à les classer dans la même catégorie : les nucléons (au nombre de $A$).\\[1cm]
+\item Autour : \underline{$Z$ \textbf{électrons} ($-$)} organisés en couches électroniques ($(1s), (2s), (2p), (3s), ...$)
+\end{itemize} 
+\end{minipage}
+
+\vspace*{1cm}
+Remarques :
+\begin{itemize}
+\item Un atome est électriquement neutre : il y a \underline{autant de protons ($+$) que d'électrons ($-$)}.
+\item C'est le \underline{nombre de protons $Z$ qui fait la nature d'un atome}. 26 protons fait qu'un atome s'appelle Fer ; un atome de 11 protons sera obligatoirement du Sodium.
+\item \underline{On symbolise un atome par $\ce{^A_ZX}$}. Par exemple $\ce{^{27}_{13}Al}$ symbolise l'Aluminium, qui a $Z=13$ protons, et $A=27$ nucléons (donc $A-Z=14$ neutrons).
+\end{itemize}
+\vfill
+Exercice :
+\begin{enumerate}
+\item Si un atome a 17 nucléons et 10 neutrons, combien a-t-il de protons ? et d'électrons ?
+\item Comment symboliser un atome d'Oxygène qui a 8 protons, 9 neutrons et 8 électrons ?
+\end{enumerate}
+
+\newpage
+\section*{B] Abondances}
+Il apparaît pertinent de vouloir visualiser la proportion d'atomes (sur Terre, dans un être vivant, dans l'Univers, ..). On peut tout autant utiliser une courbe, un diagramme en bâton, ou circulaire.
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.7]{abun1.png}
+\end{center}
+\end{figure}
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=1]{abun2.png}
+\end{center}
+\end{figure}
+
+\noindent On se rend compte que ce n'est pas toujours les mêmes atomes qu'on va retrouver en grande quantité : Dans l'Univers, c'est surtout de l'Hydrogène ($H$) et de l'Helium ($He$) (: les carburants des étoiles). \\
+Chez les humains, c'est surtout $O$ (67\%), $C$ (18\%), $H$ (10\%), et $N$ (3\%).
+
+\section*{C] Transformations}
+En Physique-Chimie, on rencontre trois types de transformations qui seront symbolisées de manière similaire :
+\begin{enumerate}
+\item \underline{Réactions Chimiques} : exemple : {\huge $\ce{2 H_2 + O_2 -> 2 H_2O}$}.\\
+Ici on retrouve les mêmes atomes (les mêmes lettres) à gauche et à droite de l'équation-bilan. Il s'agit donc d'un réarrangement d'atomes déjà existants.\\
+\item \underline{Réactions Physiques} = Changement d'Etat : exemple : {\huge $\ce{H_2O_{(l)} -> H_2O_{(g)}}$}.\\
+Ici on ne change pas d'atome/molécule/ion. On change d'état de la matière (solide / liquide / gaz) en fonction des liaisons électromagnétiques faibles (voir Ch2).\\
+\item \underline{\textbf{Réactions Nucléaires}} : exemple : {\huge $\ce{^{228}_{90}Th -> ^{224}_{88}Ra + ^4_2\alpha}$}.\\
+Dans ce type de réaction, la nature des atomes change. Ici un atome de Thorium devient un atome de Radon.\\
+\end{enumerate}
+
+\noindent Dans les prochains chapitres (Ch1 et Ch4), notre objet d'étude sera la troisième catégorie : les réactions nucléaires.\\ 
+Dans cette catégorie, il y a \underline{3 réactions nucléaires} :
+\begin{enumerate}
+\item \underline{La fusion nucléaire} (cf Ch4)
+\item \underline{La fission nucléaire}
+\item \underline{La radioactivité (=la désintégration radioactive)} (cf Ch1)\\
+\end{enumerate}
+
+\vfill
+
+\noindent Exercice :\\
+Dans les trois réactions suivantes, est-ce qu'il s'agit de transformations chimiques, physiques ou nucléaires ?
+\begin{enumerate}
+\item \qquad {\LARGE $\ce{Be_{(g)} + He_{(g)} -> C_{(g)}}$}.
+\item \qquad {\LARGE $\ce{CH_4_{(g)} + 2O_2_{(g)} -> 2H_2O_{(g)} + CO2_{(g)}}$}.
+\item \qquad {\LARGE $\ce{N_2_{(g)} -> N_{2(l)}}$}.
+\end{enumerate}
+
+
+\newpage
+\section*{D] Fusion et Fission}
+Tous les atomes sont différents, certains atomes sont plus stables que d'autres. On observe :
+\begin{figure}[H]
+\vspace*{-0.4cm}
+\begin{center}
+\includegraphics[scale=0.6]{fusfiss.png} 
+\end{center}
+\end{figure}
+\vspace*{-0.6cm}
+On remarque que \underline{l'élement le plus stable est le Fer} ($\ce{^{56}_{26}Fe}$). Dès lors:
+\begin{itemize}
+\item Tous les atomes \underline{à gauche du Fer} (plus légers, dont le nombre de protons < 26) gagnent à se rapprocher du Fer. Ils vont chercher à grossir : c'est la \textbf{fusion nucléaire} (étoiles/ITER).
+\item Tous les atomes \underline{à droite du Fer} (plus lourds, dont le nombre de protons > 26) gagnent à se rapprocher du Fer. Ils vont chercher à rapetisser : c'est la \textbf{fission nucléaire} (centrales nucléaires).
+\end{itemize}
+
+\begin{figure}[H]
+\vspace*{-1cm}
+\begin{center}
+\includegraphics[scale=0.7]{fusfiss2.png} 
+\end{center}
+\end{figure}
+\vspace*{-0.7cm}
+\noindent En se rapprochant du Fer, ces atomes libérent de l'énergie autour d'eux (dans les centrales et les étoiles, les atomes donnent de la lumière et de la chaleur).
+
+\section*{E] Radioactivité}
+Si seul $Z$ est responsable de la nature d'un atome, on peut imaginer plusieurs versions d'un même atome. Par exemple :
+\begin{itemize}
+\item 6 protons / 6 neutrons donnera un noyau de Carbone 12 ($\ce{^{12}_6C}$)
+\item 6 protons / 8 neutrons donnera un noyau de Carbone 14 ($\ce{^{14}_6C}$)
+\item 6 protons / 12 neutrons donnera un noyau de Carbone 18 ($\ce{^{18}_6C}$)
+\end{itemize}
+On appelle ces \underline{différentes versions d'un même atome : des isotopes}.\\
+
+\noindent Même chose concernant l'Helium : 
+\begin{figure}[H]
+\vspace*{-0.4cm}
+\begin{center}
+\includegraphics[scale=1]{helium.png} 
+\end{center}
+\end{figure}
+\vspace*{-1.4cm}
+\noindent Dans les trois cas, il y a toujours 2 protons, c'est donc de l'Helium, mais on remarque que les trois isotopes sont différents.\\
+
+\noindent \underline{Certains des isotopes existants sont instables : ils vont se désintégrer}.\\
+
+\noindent Il existe trois types de désintégration radioactive :
+\begin{enumerate}
+\item Désintégration $\beta +$ (beta plus) : émission d'un positron $e^+$
+\item Désintégration $\beta -$ (beta moins) : émission d'un électron $e^-$
+\item Désintégration $\alpha$ (alpha) : émission d'une particule alpha (=noyau d'Hélium)\\
+\end{enumerate}
+
+\noindent Le phénomène de désintégration est aléatoire et imprévisible (cf Lancer de dés), mais en prenant un grand nombre d'atomes on peut visualiser une loi statistique.\\
+Plus le temps passe et moins il reste d'atomes à désintégrer, et donc de moins en moins d'atomes se désintègrent.\\
+
+\noindent On obtient alors ce genre de courbe de désintégration :
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.5]{iode.png}
+\end{center}
+\end{figure}
+\noindent Au lieu de réfléchir en terme de probabilité de désintégration (possible mais pas évident), on caractérise une courbe par une propriété graphique : \underline{le temps de demi-vie (noté $t_{1/2}$)}.\\
+
+\noindent \underline{Le temps de demi-vie ($t_{1/2}$) c'est le temps} (en années, jours, secondes...) \underline{aubout duquel la} \underline{moitié d'un stock d'atome s'est désintégré}.\\
+Au bout de $t_{1/2}$ (ans, jours, secondes), on a perdu la moitié du stock initial.\\
+
+\noindent La courbe (exponentielle décroissante) fait en sorte qu'à chaque fois qu'on attend $t_{1/2}$ (ans, jours, secondes) on reperd la moitié. Ainsi, on peut facilement faire un tableau d'évolution :\\
+\begin{center} 
+\begin{tabular}{l | c | c | c | c | c | c | c }
+Pourcentage d'atomes & 100\% & 50\% & 25\% & 12.5\% & 6.25\% & 3.13\% & 1.56\% \\
+\hline
+Temps (en demi-vies) & 0 & $1\times t_{1/2}$ & $2\times t_{1/2}$ & $3\times t_{1/2}$ & $4\times t_{1/2}$ & $5\times t_{1/2}$ & $6\times t_{1/2}$ \\
+\end{tabular}
+\end{center}
+Entre chaque colonne du tableau, on divise par deux la proportion d'atomes restants, et il s'écoule $t_{1/2}$.\\
+\underline{Il en résulte qu'il restera toujours des atomes ne s'étant pas encore désintégrés}.\\
+
+\vfill
+\noindent Exemple :\\
+Le Césium 137 ($\ce{^{137}Cs}$) met environ $30$ ans pour que la moitié de son stock se désintègre :
+
+\begin{center} 
+\begin{tabular}{l | c | c | c | c | c | c | c }
+Pourcentage d'atomes & 100\% & 50\% & 25\% & 12.5\% & 6.25\% & 3.13\% & 1.56\% \\
+\hline
+Temps (en demi-vies) & 0 & 30 ans & 60 ans & 90 ans & 120 ans & 150 ans & 180 ans \\
+\end{tabular}
+\end{center}
+
+
+\newpage
+\section*{Application] Datation au Carbone 14}
+Le Carbone 14 ($\ce{^{14}_{6}C}$) est un isotope du Carbone qui est radioactif : il se désintègre donc. \\
+Il est absorbé par tous les êtres vivants (animaux/végétaux) via la nourriture et la respiration.\\
+La perte et l'ajoût de $\ce{^{14}C}$ s'équilibrent, la proportion de Carbone 14 dans l'organisme est alors constante.\\
+A la mort de l'être vivant, il cesse de respirer et de s'alimenter. La proportion ne fait alors que décroître.
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.73]{c14.JPG}
+\end{center} 
+\end{figure}
+\noindent En $\sim 5730$ ans, on passe de $100\%$ à $50\%$ de Carbone 14. On écrit donc $t_{1/2}=5730$ ans.\\
+Si on attend de nouveau $5730$ ans, on redivise par deux : il reste $25\%$ de Carbone 14.\\
+
+\noindent Si on mesure la proportion de Carbone 14 dans un échantillon, on peut estimer la date de la mort de l'organisme.\\
+La courbe nous montre que le Carbone 14 n'est pas idéal pour mesurer des morts récentes (entre 0 et quelques centaines d'années), ou des morts très lointaines (après quelques dizaines de milliers d'années).\\
+
+\noindent On évite alors d'utiliser le Carbone 14 pour dater des morts récentes (crimes par exemple) ou bien des morts très anciennes (dinosaures par exemple).
+
+\newpage
+\section*{Application] Imagerie médicale}
+Les désintégrations radioactives peuvent provoquer des pathologies pour les humains (lésions cutanées, brûlures, défaillances d'organes, cancer, mort).\\
+Néanmoins, il existe plusieurs mécanismes de radioactivité, et certains types sont jugés moins dangereux que d'autres.\\
+
+\noindent On se sert de certaines transformations nucléaires dans le domaine médical, à des fins diagnostiques. C'est le cas des examens de :
+\begin{itemize}
+\item \underline{scintigraphie} avec du Technicium 99 ($^{99m}Tc$ : $t_{1/2} = 6\,h$).
+\item \underline{TEP} (ou \emph{PET Scan} en anglais) pour Tomographie par Emission de Positons, basée sur du Fluor 18 ($^{18}F : t_{1/2} = 2\,h$).
+\end{itemize}
+
+\noindent Les principes sont relativement similaires : On injecte dans le corps du patient une dose d'un radioisotope, puis ces atomes seront absorbés pour l'élaboration de cellules. \\A l'aide d'une caméra gamma, on peut visualiser à quels endroits ces nouveaux atomes se sont amassés : c'est une zone qui fabrique beaucoup de cellules, c'est-à-dire une potentielle tumeur.\\
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.45]{scinti.png}
+\end{center} 
+\end{figure}
+
+\noindent Comme les isotopes se désintègrent très vite, on diminue les risques de dégâts à long terme chez le patient. En contrepartie, les hôpitaux préparent une dose pour une heure donnée, et tout retard du patient devient problématique en terme de logistique.
+
+\end{Large}
+\end{document}
+
+

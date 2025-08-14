@@ -1,0 +1,1019 @@
+1Table of Contents
+Mocha® AE Release Notes  ...................................................................................... 1
+Introduction  ................................................................................................................ 1
+New features in Mocha AE 2021 v8.0.4  ................................................................... 2
+Fixed issues since Mocha AE v7.5.0  ........................................................................ 3
+Known Issues  ............................................................................................................ 6
+Hardware Requirements  ......................................................................................... 35
+Recommended Hardware  ................................................................................ 35
+Minimal Requirements  ..................................................................................... 35
+Software Requirements for Mocha AE Plugin  ......................................................... 36
+Host Applications  ............................................................................................. 36
+Operating System  ............................................................................................ 36
+Mocha® AE Release Notes
+Introduction
+These release notes accompany Mocha AE  8.0.4.
+Release notes cover Mocha AE  but may also reference the standalone and plugin
+versions of the Mocha Pro  products.
+Documentation is available inside Mocha AE  by pressing the F1 key.
+The Mocha AE version is a light version of Mocha Pro. To compare
+versions, see this chart1
+Projects created with version 8.0.4 may not be backwards
+compatible with earlier versions of Mocha.
+Mocha 2021 requires macOS 10.12 or higher, but we recommend at
+least macOS 10.13 for GPU support.
+1 https://borisfx.com/products/mocha/compare-mocha/2New features in Mocha AE 2021 v8.0.4
+•Updated RED R3D SDK Support:  RED R3D support has been upgraded to the
+latest version (8.0.1).
+•Launch as Mocha AE:  You can now launch Mocha Pro 2021 instead of Mocha AE
+when choosing "Track in Boris FX Mocha" from the After effects animation menu
+•Clickable Daily Tips:  Daily tips now have clickable links when a URL is in the tip
+•Custom QT Scaling:  Qt scale factor is now set via MOCHA_QT_SCALE_FACTOR
+to avoid conflicts with other QT scale environment variables
+•AdjustTrack V2:  We’ve completely overhauled AdjustTrack to be easier to use
+and less prone to errors. For more information on using AdjustTrack V2, see the
+AdjustTrack Module chapter in the User Guide.
+•Out of Process Mocha Plug-In:  The Mocha Plug-in now operates as a separate
+process, which allows far greater resource management and stability.3Fixed issues since Mocha AE v7.5.0
+Issue: MO-11101 Standard AE masks cannot be linked to masks
+made by Mocha AE or Mocha Pro
+Platform: macOS and Windows
+Product: Mocha Pro and Mocha AE Plug-Ins
+Bug Description: Masks created by the "Create AE Masks" command in the
+Mocha plug-ins can now be properly read by other Mask
+properties in AE when using expressions.
+Issue: MO-11079 Apply matte is broken in AE when multithreading is
+turned on
+Platform: macOS and Windows
+Product: Mocha Pro and Mocha AE Plug-Ins
+Bug Description: Apply matte would cause AE to show only a single frame and
+be in a semi-hung state when multithreading was turned on.
+Issue: MO-11018 Frame offset does not include clip trim in After
+Effects when viewing frames in Host Format
+Platform: macOS and Windows
+Product: Mocha Pro Adobe and Mocha AE Plug-Ins
+Bug Description: After Effects Compositions that are trimmed at the head
+showed no trim when viewing the timeline frames in Host
+Format.
+Issue: MO-10573 OCIO Working Colorspace in Project Settings and
+Viewer Preferences display different values
+Platform: All Platforms
+Product: All Products
+Bug Description: Color space settings could differ between the project settings
+and the view preferences.
+Issue: MO-10571 OCIO Viewer Preference is not the same setting as
+Color Preferences
+Platform: All Platforms
+Product: All Products4Bug Description: Viewer preferences in OCIO could be different from default
+preferences.
+Issue: MO-10511 Massive lag when moving points with Wacom pen
+Platform: All Platforms
+Product: All Products
+Bug Description: Using the mouse and then using a Wacom tablet could cause
+a large lag in the cursor.
+Issue: MO-10429 The QT_SCALE_FACTOR environment variable
+can break Mocha GUI
+Platform: All Platforms
+Product: All Products
+Bug Description: The QT_SCALE_FACTOR should no longer cause scaling
+issues in the Mocha interface.
+Issue: MO-10292 Wacom button assignments are ignored by Mocha
+GUI
+Platform: All Platforms
+Product: Mocha Pro Plug-ins
+Bug Description: Wacom assignments are now recognised when used in the
+plugin
+Issue: MO-10254 On Win systems, for plugins, keyframes are drawn
+in black color instead of yellow.
+Platform: Windows
+Product: Mocha Pro Plug-ins
+Bug Description: Mocha now draws dopesheet keyframes in the correct color
+on Windows.
+Issue: MO-9956 Mocha UI does not look correct when using different
+resolution monitors with 200% scaling
+Platform: All Platforms
+Product: All Products
+Bug Description: When using multiple monitors at different resolutions and
+scaling, the Mocha UI should now be correctly displayed.5Issue: MO-9881 Read-only Project Settings fields are editable with
+the mouse wheel
+Platform: All Platforms
+Product: All Products
+Bug Description: You now can’t edit disabled fields by scrolling the mouse
+wheel over them.
+Issue: MO-9784 Canvas isn’t centered when switching between
+Essential and Classic
+Platform: All Platforms
+Product: All Products
+Bug Description: When switching between layouts, the canvas now remains
+centered.6Known Issues
+Issue: MO-11019 Custom timeline shortcuts don’t work once a layer
+is created in Mocha
+Platform: All Platforms
+Product: All Products
+Bug Description: If you customise timeline shortcuts (such as "next frame") they
+will work until you create a layer.
+Workaround: Use the default shortcuts.
+Issue: MO-11010 Mocha crashes on some systems when launched
+on Windows Remote Desktop
+Platform: macOS and Windows
+Product: All Products
+Bug Description: Mocha can crash on some systems when attempting to launch
+via RDP.
+Workaround: Open non-remotely.
+Issue: MO-11006 AdjustTrack offsets surface incorrectly for some
+shots
+Platform: All Platforms
+Product: All Products
+Bug Description: AdjustTrack will offset the surface incorrectly on some shots
+even when the reference points are aligned to the right places
+on other frames.
+Workaround: None.
+Issue: MO-10949 GPU tracking and processing not available on
+some Windows systems with an Intel 4600 GPU
+Platform: Windows
+Product: All Products
+Bug Description: Intel 4600 GPUs are causing GPU processing options to be
+unavailable.
+Workaround: None.7Issue: MO-10897 After Effects renders out of step when rendering to
+the queue at a different frame rate
+Platform: Windows and macOS
+Product: Mocha Pro Adobe and Mocha AE Plug-Ins
+Bug Description: If the After Effects render queue frame rate differs from your
+comp frame rate, Mocha renders will be offset incorrectly.
+Workaround: Render to the same frame rate as the original comp.
+Issue: MO-10885 Mocha Pro Logo is not color managed
+Platform: All Platforms
+Product: All Products
+Bug Description: The Mocha pro logo insert clip will not match the OCIO color
+settings of the source clip.
+Workaround: None.
+Issue: MO-10853 Interlaced projects cause Shift-modified shapes to
+draw 2:1 (H:W) rectangle/ellipse instead of square/circle.
+Platform: All Platforms
+Product: All Products
+Bug Description: Attempting to draw shift-constrained shapes in interlaced
+projects causes the shapes to be drawn elongated instead of
+even.
+Workaround: None.
+Issue: MO-10811 Mocha UI not launching if Intel GPU is the only
+active GPU
+Platform: All Platforms
+Product: All Products
+Bug Description: Only having an Intel GPU on enabled the system can cause
+Mocha Pro not to initialise.
+Workaround: None.
+Issue: MO-10810 Holding down COMMAND while working on Bezier
+tangents shows white block instead of cursor
+Platform: All Platforms8Product: All Products
+Bug Description: There is a missing cursor when working on modifying bezier
+tangents.
+Workaround: None. Cosmetic only.
+Issue: MO-10776 Mocha spline overlays are offset when Windows
+scaling is too large
+Platform: All Platforms
+Product: All Products
+Bug Description: Large scaling of the window display settings can cause Mocha
+to offset splines
+Workaround: Reduce the display scale in Windows display settings.
+Issue: MO-10720 Mocha Pro and Mocha AE are lagging in AE when
+third-party script panels are showing
+Platform: All Platforms
+Product: Mocha Pro Adobe and Mocha AE Plug-Ins
+Bug Description: If a large amount of the third-party scripts are displayed in the
+AE panels, the Mocha GUI can slow down.
+Workaround: Close third-party script panels before launching Mocha.
+Issue: MO-10650 Rotation not possible on transform tool for high
+resolution screens or zoomed out canvas
+Platform: All Platforms
+Product: All Products
+Bug Description: The transform tool hitboxes for rotation are too small when
+there is a very high resolution screen.
+Workaround: Zoom into the canvas further.
+Issue: MO-10623 Shapes can distort on some frames when tracking
+long perspective shots
+Platform: All Platforms
+Product: All Products
+Bug Description: Long perspective shots will sometimes twist or distort shapes
+on some frames9Workaround: Nome.
+Issue: MO-10579 Canvas color does not change on Mac until it is
+selected
+Platform: macOS
+Product: All Products
+Bug Description: If you change the canvas background color it will not update
+until you refresh the canvas by clicking on it.
+Workaround: None.
+Issue: MO-10508 Shape becomes unselectable when undoing a
+control point change after moving the playhead
+Platform: All Platforms
+Product: All Products
+Bug Description: Undoing a control point move after moving the playhead can
+make the point unselectable
+Workaround: Deselect the layer then reselect.
+Issue: MO-10492 Mocha Edge Properties panel overlaps the module
+panels when moving between HD and 4k monitor
+Platform: All Platforms
+Product: All Products
+Bug Description: The Edge properties can overlap the parameters when moving
+the GUI between high and low resolution screens.
+Workaround: None.
+Issue: MO-10475 Point Insertion tool creates incorrect keyframes
+with Überkey
+Platform: All Platforms
+Product: All Products
+Bug Description: Point insertion can make single-point keyframes instead of
+spline keyframes when using Überkey.
+Workaround: None.
+Issue: MO-10454 Mocha viewport can glitch to show flipped inverted
+video and interface elements10Platform: All Platforms
+Product: All Products
+Bug Description: Mocha can occasionally flip or glitch UI graphics on certain
+hardware configurations.
+Workaround: Resize the GUI and the window should reset.
+Issue: MO-10450 GPU shows skipping in tracking where CPU
+doesn’t for some shots
+Platform: All Platforms
+Product: All Products
+Bug Description: Some GPUs can miscalculate a track where the CPU tracker
+doesn’t.
+Workaround: Use CPU.
+Issue: MO-10430 Splash screen will remain up even when the
+interface has loaded when launching via "Track in Boris FX
+Mocha"
+Platform: All Platforms
+Product: All Products
+Bug Description: The Splash screen can get in the way when launching Mocha
+via command line methods.
+Workaround: None.
+Issue: MO-10423 Changing Motion parameters only keyframes
+Search Parameters
+Platform: All Platforms
+Product: All Products
+Bug Description: If you change the Motion parameters in the Track module, the
+Search parameters are keyframed.
+Workaround: None.
+Issue: MO-10359 Mocha can be "Unable to track" when input frame
+doesn’t exist on some systems
+Platform: All Platforms
+Product: All Plug-ins11Bug Description: Mocha can throw an error on some systems that it is unable to
+track due to not having an input frame.
+Workaround: None. Currently suspected to be related to memory
+exhaustion.
+Issue: MO-10347 Long delay when opening Mocha for first time in a
+host session
+Platform: All Platforms
+Product: Mocha Plug-ins
+Bug Description: There can be a significant delay when opening Mocha Pro for
+the first time in a session
+Workaround: None. Subsequent openings are normal speed.
+Issue: MO-10234 Stopping playback can be unresponsive when
+caching frames in plugins
+Platform: All Platforms
+Product: Mocha Pro Plug-ins
+Bug Description: Stopping playback after you have started playing can
+sometimes take several clicks.
+Workaround: None.
+Issue: MO-10044 Mocha doesn’t update output when a mask on the
+source layer is modified in After Effects
+Platform: All Platforms
+Product: Mocha AE and Mocha Pro Plug-ins
+Bug Description: When an After Effects layer has a keyframed mask, applying
+Mocha will not refresh the mask cutout
+Workaround: None.
+Issue: MO-9994 Shapes with deactivated points do not export
+correctly
+Platform: All Platforms
+Product: All Products
+Bug Description: Shapes that have deactivated points will not export properly.
+Workaround: Re-enable points before export.12Issue: MO-9982 Dope sheet can’t scroll all items when there are
+many layers
+Platform: All Platforms
+Product: All Products
+Bug Description: Projects with many layers cannot show all items in the
+Dopesheet.
+Workaround: None.
+Issue: MO-9973 Can’t select all control points at once after creating a
+bezier shape
+Platform: All Platforms
+Product: All Products
+Bug Description: When attempting to select all the bezier points at once, one
+of the points will be deselected which causes that one point to
+not move when attempting to move the entire shape.
+Workaround: Reselect all control points.
+Issue: MO-9937 Mocha does not track backwards correctly for
+splines created on earlier frames
+Platform: All Platforms
+Product: All Products
+Bug Description: Tracking backwards does not update the spline correctly when
+the spline has been created on frames previous to the tracking
+starting point.
+Workaround: Track from the creation keyframe or create a new spline
+keyframe at the tracking point.
+Issue: MO-9817 Can’t pan and zoom while playing back on Mac
+Platform: macOS
+Product: All Products
+Bug Description: The pan/zoom tools sometimes cannot be used when playing
+back a shot
+Workaround: Stop playback.
+Issue: MO-9813 Surface Area situated around 1st point when using
+Add X/B-Spline13Platform: All Platforms
+Product: All Products
+Bug Description: Drawing a new layer with the "Add" spline tools can cause the
+surface to sit on the first drawn point
+Workaround: Use the "Create" spline tools to create a new layer.
+Issue: MO-9806 Layout menu goes missing when changed from Big
+Picture to Roto
+Platform: All Platforms
+Product: All Products
+Bug Description: Switching from Big Picture to the Roto Layout causes the
+Layout dropdown to become hidden
+Workaround: Pull the Layout tool bar size out to the right to reveal the drop
+down.
+Issue: MO-9744 0% progress bar at the top right after starting Mocha
+a second time
+Platform: All Platforms
+Product: Mocha Pro Plug-in
+Bug Description: Mocha will display a 0% Progress bar at the top right corner
+when you reopen Mocha any other time after the initial use.
+Workaround: None. Cosmetic only.
+Issue: MO-9593 Pan/Zoom toggle doesn’t work with some trackpads
+Platform: All Platforms
+Product: All Products
+Bug Description: Using Pan or Zoom toggles with a trackpad that has buttons
+may not work.
+Workaround: Select the tool rather than using the toggle key.
+Issue: MO-9426 GPU preferences on Mac are not remembered
+when you uncheck both Use GPU Processing  and Allow
+unsupported GPUs
+Platform: All Platforms
+Product: All Products14Bug Description: GPU preferences on Mac are not remembered when you
+uncheck both Use GPU Processing  and Allow unsupported
+GPUs
+Workaround: Turn off just "Use GPU processing". "Allow unsupported
+GPUs" will be disabled when you do this.
+Issue: MO-9370 White screen flash when launching Mocha as a
+plug-in.
+Platform: All Platforms
+Product: Mocha Pro Plug-in
+Bug Description: There can be a white screen before the full interface loads in
+the Mocha Plug-in
+Workaround: None.
+Issue: MO-9301 It is possible to move points while playing back in
+the mocha timeline
+Platform: All Platforms
+Product: All Products
+Bug Description: Pressing space while moving points in a layer will still keep
+moving the points while the clip plays.
+Workaround: None.
+Issue: MO-9300 Save button isn’t completely rectangular
+Platform: All Platforms
+Product: All Products
+Bug Description: The Save button is slightly cut off.
+Workaround: None. Cosmetic only.
+Issue: MO-9192 Panel headings disappear when re-docked under
+each other
+Platform: All Platforms
+Product: All Products
+Bug Description: Docking a panel under another can hide the title of the panel
+Workaround: None.15Issue: MO-9142 Add keyframe at current position not enabled when
+switching from Überkey to Auto-key
+Platform: All Platforms
+Product: All Products
+Bug Description: You cannot add a keyframe when in Überkey mode after
+moving to another part of the timeline
+Workaround: Click the timeline again to activate the button.
+Issue: MO-8948 GPU tracking is abnormally slow to start on some
+machines
+Platform: All Platforms
+Product: All Products
+Bug Description: The GPU tracker can initially pause for several seconds
+before starting to track anything.
+Workaround: None.
+Issue: MO-8890 Deleting all keyframes for a shape ignores point
+weighting
+Platform: All Platforms
+Product: All Products
+Bug Description: Weighting is not restored to original state if shape keyframes
+are deleted
+Workaround: None
+Issue: MO-8721 Plug-in crash when texture memory is too low
+Platform: All Platforms
+Product: All Products
+Bug Description: If GPU texture memory is set very low, Mocha can crash.
+Workaround: Set texture memory in Preferences to at least 50% of the
+available GPU memory.
+Issue: MO-8646 Time-remap/stretching a precomp containing a
+Mocha effect causes incorrect result
+Platform: macOS and Windows16Product: Mocha Pro Adobe and Mocha AE Plug-Ins, Mocha VR Adobe
+Plug-in.
+Bug Description: A Mocha Plug-in applied to any comp with native AE time
+manipulation (such as stretch) will not work predictably.
+Workaround: None
+Issue: MO-8623 Incremented steps when adjusting a layers
+Edge Width with the +/- (plus and minus) buttons is proxy
+dependent
+Platform: All Platforms
+Product: All Plugin-ins
+Bug Description: Changing proxy changes the pixel scale of the edge width
+tool.
+Workaround: Use the proxy you first adjusted the edge width with to make
+new adjustments.
+Issue: MO-8266 When editing layers with multiple x-splines, spline
+tangents only animate for the selected layer
+Platform: All Platforms
+Product: All Products
+Bug Description: In scenarios where a layer has multiple x-splines, when you
+try to relax all the spline tangents on both splines, only the
+ones for the layer you’ve selected with the mouse animate
+before you let go of the mouse
+Workaround: None.
+Issue: MO-8212 Infinite loop error message when adjusting surface
+in manual track
+Platform: All Platforms
+Product: All Products
+Bug Description: In rare cases you can get a repeating error message if you try
+to adjust a tracked surface in Manual mode.
+Workaround: None.
+Issue: MO-8193 Tracking in AE via an adjustment layer will keep
+cache from last open Mocha Plug-in instance17Platform: All Platforms
+Product: Mocha Pro Adobe and Mocha AE Plug-Ins, Mocha VR Adobe
+Plug-in
+Bug Description: Adjustment layers don’t always give correct source inputs.
+Workaround: Apply directly to the clip.
+Issue: MO-8183 Mocha Plug-in: Copy and Paste commands are
+disabled in Edit menu if a layer is selected
+Platform: All Platforms
+Product: All Plug-ins
+Bug Description: Copying in the edit menu is disabled for some layers
+Workaround: None.
+Issue: MO-8179 Point insertion tool reverts back to pick tool after
+zooming or moving
+Platform: All Platforms
+Product: All Products
+Bug Description: If you zoom or pan using toggles, the point insertion tools
+returns to the Pick tool.
+Workaround: None.
+Issue: MO-8172 Link to track data not copied over multiple effect
+instances
+Platform: All Platforms
+Product: All Plug-ins
+Bug Description: Copying an effect does not copy over layer property "Link to
+track" in the Mocha project.
+Workaround: Relink the layers.
+Issue: MO-8147 No warning if clip is timestretch/timeremapped
+changed from initial track in Plug-in
+Platform: All Platforms
+Product: All Plug-ins
+Bug Description: If the user changes a video track, the Plug-in should warn the
+user they need to retrack.18Workaround: None.
+Issue: MO-8146 Users cannot change the Insert clip of a hidden
+layer
+Platform: All Platforms
+Product: All Products
+Bug Description: Changing the visibility of a layer will not update the Insert Clip
+setting properly.
+Workaround: Unhide the layer and set the property.
+Issue: MO-8093 Zoom windows show whole clip image for the
+cropped clip
+Platform: All Platforms
+Product: All Products
+Bug Description: You can see the whole clip image in Zoom windows even if
+they are cropped.
+Workaround: None.
+Issue: MO-8089 GPU tracking isn’t stopped when the object is out of
+the image
+Platform: All Platforms
+Product: All Products
+Bug Description: GPU keeps on tracking if the layer goes out of the image.
+Workaround: Stop manually.
+Issue: MO-8077 Manual Track surface adjustments only works
+sporadically when using Wacom Tablet
+Platform: All Platforms
+Product: All Products
+Bug Description: Using a tablet can sometimes effect manual adjustment of the
+surface
+Workaround: Use a mouse instead.
+Issue: MO-8055 Project in/out doesn’t draw in the Mocha Plug-in UI19Platform: All Platforms
+Product: All Plug-ins
+Bug Description: The red in and out markers for a project don’t show in the
+timeline for the Plug-in
+Workaround: None. Cosmetic only.
+Issue: MO-7953 Selection tools should be in tools
+Platform: All platforms
+Product: All Products
+Bug Description: The lasso and marquee selection tools should be in the Tools
+section of the Key shortcuts dialog.
+Workaround: None
+Issue: MO-7951 Mocha Pro AE Plug-in stutters frames if AE is
+playing when launching Mocha
+Platform: All Platforms
+Product: Mocha Pro Adobe and Mocha AE Plug-Ins
+Bug Description: If you hit space to play a clip in AE then launch Mocha from
+the Mocha Pro Plug-in, the footage in Mocha Pro may stutter.
+Workaround: Don’t play the clip while loading the Plug-in interface.
+Issue: MO-7941 Mocha Pro AE Plug-in does not read in output of
+effects above it in the Effects stack
+Platform: All Platforms
+Product: Mocha Pro Adobe and Mocha AE Plug-Ins, Mocha VR Adobe
+Plug-in
+Bug Description: The AE version of the Mocha Pro Plug-in will only read the
+base layer, not the effects applied to it already.
+Workaround: Use a precomp to contain the effects you want to read into
+Mocha Pro Plug-in.
+Issue: MO-7909 Canvas drops to the "Selected layer" from the layer
+matte clip after renaming the layer
+Platform: All Platforms
+Product: All Products20Bug Description: If you rename the layer while viewing a matte clip, the view
+changes back to "Selected layer"
+Workaround: Reselect the matte clip from the clip view options
+Issue: MO-7898 Adjusting manual tracking with a tablet pen alters
+other keyframes
+Platform: All Platforms
+Product: All Products
+Bug Description: If you track frames then add manual track keyframes with a
+tablet pen, the other frames offset.
+Workaround: If you use a mouse it behaves normally.
+Issue: MO-7828 Wrong order after pasting copied layers if their order
+was changed
+Platform: All Platforms
+Product: All Products
+Bug Description: If you copy a layers after reordering them in the layer controls,
+they don’t paste in the same order.
+Workaround: None
+Issue: MO-7813 Switching between different layouts makes canvas
+area change position
+Platform: All Platforms
+Product: All Products
+Bug Description: When switching between different views using CMD+1, CMD
++2, CMD+3 buttons, the currently viewed area changes.
+Workaround: None
+Issue: MO-7774 Removing a selected point after stepping over
+points causes removing the layer
+Platform: All Platforms
+Product: All Products
+Bug Description: Using the { and } keys to step over points will delete the layer
+if you try to delete the single point.
+Workaround: Select the point without stepping first.21Issue: MO-7770 States of add/delete keyframe buttons are incorrect
+after adding/removing keyframes
+Platform: All Platforms
+Product: All Products
+Bug Description: Delete keyframe is disabled and add keyframe button is
+enabled when animating a control point, and vice versa when
+on a non-keyframed frame.
+Workaround: None
+Issue: MO-7685 Cannot change some parameters for invisible layers
+on the Track page
+Platform: All Platforms
+Product: All Products
+Bug Description: If you turn off the visibility of a layer, some of its parameters
+cannot be altered.
+Workaround: Turn on the layer visibility.
+Issue: MO-7664 Cannot change parameters in grouped layers for
+some projects
+Platform: All Platforms
+Product: All Products
+Bug Description: Layers inside groups have sporadic ability to change radio
+buttons and check boxes
+Workaround: Pull layers out of group
+Issue: MO-7617 Shape data to out of sync if layer has in point
+different to timeline
+Platform: All Platforms
+Product: All Products
+Bug Description: If a layer has a different in point to the project in point, it is out
+of sync.
+Workaround: Extend the layer in point to the start of the project.
+Issue: MO-7581 Twisted loops occur in beziers for some exports
+Platform: All Platforms22Product: All Products
+Bug Description: Exported Beziers can sometimes have looped splines in
+closely animated points.
+Workaround: None
+Issue: MO-7573 Mocha loads behind After Effects when launching
+from "Track in Mocha AE" on OS X
+Platform: OS X
+Product: All Products
+Bug Description: Mocha always loads in the background when launching it from
+After Effects.
+Workaround: None
+Issue: MO-7529 Maximized Mocha window size never remembers
+state on Mac
+Platform: OS X
+Product: All Products
+Bug Description: Opening Mocha on OS X will resize the window, even if you
+have adjusted it to full screen previously.
+Workaround: None
+Issue: MO-7477 Mocha crashes when exporting shape data to some
+formats if layer name contains more than 205 characters
+Platform: Linux and Windows: all
+Product: All Products
+Bug Description: Layers with huge amounts of characters in the name may
+crash Mocha on exporting shape data.
+Workaround: Use a shorter name.
+Issue: MO-7476 A project can load without layers if the layers
+contain some peculiar characters
+Platform: All Platforms
+Product: All Products
+Bug Description: Some characters do not read in project files and may not load
+layers correctly.23Workaround: None
+Issue: MO-7436 Cannot add a control point in the left bottom corner
+of an image
+Platform: All Platforms
+Product: All Products
+Bug Description: There is an issue with adding a point to the exact bottom left
+corner of a frame.
+Workaround: None
+Issue: MO-7429 Cannot detect and move spline points if they are
+located near spline line of another spline in the same layer
+Platform: All Platforms
+Product: All Products
+Bug Description: Points that are close to other splines are hard to select and
+move.
+Workaround: Zoom in further to make selection easier.
+Issue: MO-7418 Previous and Next keyframes zoom windows
+change according to the position of the current keyframe when
+moving surface corners in manual track mode
+Platform: All Platforms
+Product: All Products
+Bug Description: The previous keyframe zoom window is referencing the
+current keyframe when adjusting in manual track mode.
+Workaround: None
+Issue: MO-7416 It is possible to open or start a project while another
+is loading.
+Platform: All Platforms
+Product: All Products
+Bug Description: If you are quick enough, or the project is large, it is possible to
+start or open another project while the first is still loading.
+Workaround: Wait until the project finishes loading before opening a new
+one.24Issue: MO-7415 Wrong surface behavior in adjusting on a frame
+which is before the primary frame and contains a layer
+keyframe
+Platform: All Platforms
+Product: All Products
+Bug Description: Reference points are adjusted instead of the surface points
+when adjusting on a frame before the primary keyframe
+Workaround: Reset the AdjustTrack solution and try again.
+Issue: MO-7401 Undo of pasting a contour to existing layer drops
+layer selections
+Platform: All Platforms
+Product: All Products
+Bug Description: Undoing a contour paste removes the selection from the
+current layer.
+Workaround: Reselect.
+Issue: MO-7351 Panes that were undocked during loading process
+return to the dock state after opening a project
+Platform: All Platforms
+Product: All Products
+Bug Description: Undocked state is not remembered on closing.
+Workaround: None
+Issue: MO-7343 Error when trying to paste spline data in the Dope
+Sheet
+Platform: All Platforms
+Product: All Products
+Bug Description: If you have spline data on the clipboard and try to paste to the
+dopesheet, there is an error.
+Workaround: Copy keyframes first.
+Issue: MO-7326 Removing "activate/deactivate" layer keyframe
+doesn’t update layer state on the canvas25Platform: All Platforms
+Product: All Products
+Bug Description: The canvas doesn’t refresh after removing activate or
+deactivate keyframes from a layer.
+Workaround: Move mouse cursor to the canvas or switch between frames
+Issue: MO-7276 Start Frame calculates wrong after entering negative
+value as Fixed frame in the Frame Offset field
+Platform: All Platforms
+Product: All Products
+Bug Description: Start Frame calculates wrong after entering negative value as
+Fixed frame in the Frame Offset field
+Workaround: None
+Issue: MO-7275 Frame Offset returns to default Fixed Frame after
+entering negative value and moving focus between clip frame
+range fields
+Platform: All Platforms
+Product: All Products
+Bug Description: Inserting a negative frame offset in the New Project dialog can
+set the wrong offset.
+Workaround: Change the offset after the project is created.
+Issue: MO-7271 Changing In/Out layer points by mouse rotation
+aren’t added to Undo/Redo history
+Platform: All Platforms
+Product: All Products
+Bug Description: Rotational control adjustment of a layer in/out point is not
+undoable.
+Workaround: Type instead of using the mouse to adjust the value.
+Issue: MO-7264 Frame offset field does not switch between frames
+and timecode
+Platform: All Platforms
+Product: All Products26Bug Description: Turning on "Timecode" for the frame offset view in the Clip tab
+does not update the frame offset field to timecode.
+Workaround: None
+Issue: MO-7251 Wrong numbers are shown for frames with negative
+numbers
+Platform: All Platforms
+Product: All Products
+Bug Description: Some frame ranges in Mocha can be incorrect when using a
+negative frame offset in the Clip tab.
+Workaround: None
+Issue: MO-7195 There is ability to step between control points for
+locked or invisible layers
+Platform: All Platforms
+Product: All Products
+Bug Description: You can use the "Next control point" controls to cycle through
+locked or invisible layers.
+Workaround: None
+Issue: MO-7190 Cannot move points of a Bezier layer after undoing
+the creation of a new layer
+Platform: All Platforms
+Product: All Products
+Bug Description: If you have created a bezier layer then make another
+shape, undoing the second layer causes the bezier to be
+unadjustable.
+Workaround: None
+Issue: MO-7178 Inconsistent layer mode after undo moving points of
+several layers
+Platform: All Platforms
+Product: All Products
+Bug Description: Multiple changes to different layers then undoing them can
+cause problems with some layers.
+Workaround: None27Issue: MO-7168 Tangents of child neighboring points are changed
+when moving a parent point
+Platform: All Platforms
+Product: All Products
+Bug Description: Lock Tangents doesn’t work correctly if moving the point by
+attaching it to a parent point on another layer.
+Workaround: None
+Issue: MO-7167 Inconsistent mode for Bezier tangents after undo/
+redo their changes
+Platform: All Platforms
+Product: All Products
+Bug Description: Bezier tangent handles can sometimes follow the cursor after
+undoing Bezier layer adjustments.
+Workaround: None
+Issue: MO-7144 Error when clicking on the "-" edge width button for
+open splines
+Platform: All Platforms
+Product: All Products
+Bug Description: An error shows when trying to adjust the negative edge width
+of an open spline.
+Workaround: None
+Issue: MO-7139 Edge width minus doesn’t compensate edge width
+plus for complicated layers
+Platform: All Platforms
+Product: All Products
+Bug Description: Edge curve doesn’t match the spline curve and error is shown
+when adding large edge widths then reducing them again on
+complicated shapes
+Workaround: None
+Issue: MO-7116 Extra step in undo/redo history after using Set and
++/- edge width actions28Platform: All Platforms
+Product: All Products
+Bug Description: An additional undo step is created when performing edge
+width operations.
+Workaround: None
+Issue: MO-7107 Sometimes a child point is unconstrained after
+constraining a parent point
+Platform: All Platforms
+Product: All Products
+Bug Description: Chaining multiple layers with the vertex attach tool can
+sometimes unconstrain the points.
+Workaround: None
+Issue: MO-7083 Extra undo/redo operation is required for changing a
+Master reference point position in the AdjustTrack page
+Platform: All Platforms
+Product: All Products
+Bug Description: You have to undo or redo twice when changing the Master in
+AdjustTrack.
+Workaround: None
+Issue: MO-7078 There is no undo operation for changing corners
+mode for all layer handles after clicking right mouse button on
+some handle
+Platform: All Platforms
+Product: All Products
+Bug Description: Switching to corner mode for all layer handles using right click
+cannot be undone.
+Workaround: None
+Issue: MO-7077 Sometimes "Apply keyframe changes to all views"
+doesn’t work when Überkey mode is selected
+Platform: All Platforms
+Product: All Products29Bug Description: In stereo shots, "Apply keyframe changes to all views" can
+sometimes not work across views with Überkey.
+Workaround: None
+Issue: MO-7068 Layer in/out point fields are too narrow when
+working with timecodes
+Platform: All Platforms
+Product: All Products
+Bug Description: Layer in/out point fields are too narrow when working with
+timecodes so they become hard to see.
+Workaround: Stretch the left panel out further.
+Issue: MO-7067 Tangent parameters are keyframed when creating a
+bezier layer in Überkey mode
+Platform: All Platforms
+Product: All Products
+Bug Description: If you create Bezier layers with Überkey on, it will create
+keyframes only for the tangents.
+Workaround: Create a layer with Autokey.
+Issue: MO-7049 Incorrect Bezier handles at spline ends when
+exporting X-Splines to After Effects
+Platform: All Platforms
+Product: All Products
+Bug Description: Smoothed X-Splines may export with incorrect Bezier handles
+when exported to After Effects.
+Workaround: None
+Issue: MO-7048 Project out point doesn’t change correctly after
+changing project length in the Project Settings dialog
+Platform: All Platforms
+Product: All Products
+Bug Description: Changing the project length will not move the outpoint
+correctly.
+Workaround: Reset or adjust out point manually.30Issue: MO-7001 Selected Absolute Path isn’t saved after switching to
+Relative Path and back in Preferences
+Platform: All Platforms
+Product: All Products
+Bug Description: Switching between Relative and Absolute paths doesn’t save
+the Absolute path.
+Workaround: None
+Issue: MO-6972 Unix-style Absolute Output directory path results in
+a wrong folder being created on Windows
+Platform: Windows
+Product: All Products
+Bug Description: If you open an OS X project on Windows, accepting the saved
+absolute folder output directory will create the wrong folder.
+Workaround: Change the Absolute path before accepting the dialog.
+Issue: MO-6074 Clicking in the Layer Controls pane when adding a
+spline causes spline to close without reverting back to arrow
+tool
+Platform: All Platforms
+Product: All Products
+Bug Description: If you click in the layer controls panel while drawing a spline,
+the spline will finish but the draw tool will remain active yet
+unusable.
+Workaround: None.
+Issue: MO-6068 Playhead continues to advance frames after the
+Contour shuttle controller jog is released
+Platform: All Platforms
+Product: All Products
+Bug Description: When using the Contour Design ShuttlePRO jog controller to
+drive frame advancement, the playhead will over compensate
+and keep moving after you have stopped rotating.
+Workaround: Rotate the jog slower.
+Issue: MO-5995 Canvas errors jump when zooming into the canvas31Platform: All Platforms
+Product: All Products
+Bug Description: Zooming in when there is an error message on the canvas will
+cause it to jump.
+Workaround: None
+Issue: MO-5829 Custom modifier keys malfunction in Mac Remote
+Management (VNC)
+Platform: OS X
+Product: All Products
+Bug Description: If you open Mocha remotely some of the key shortcuts and
+toggles will not work.
+Workaround: None
+Issue: MO-5808 Moving tracking keyframes sometimes breaks
+tracking
+Platform: All Platforms
+Product: All Products
+Bug Description: Sometimes if you manipulate the tracking keys in the dope
+sheet, additional tracking for the layer will not work.
+Workaround: None
+Issue: MO-5750 Pan and Zoom keys don’t work when tracking
+Platform: All Platforms
+Product: All Products
+Bug Description: When tracking you can’t pan or zoom in the view.
+Workaround: None
+Issue: MO-5379 Bounding box isn’t shown for multiple selected
+layers if the clicked one was out of range
+Platform: All
+Product: All Products
+Bug Description: The bounding box isn’t shown for multiple selected layers if
+the first one clicked is out of range
+Workaround: None32Issue: MO-5304 Undoing adding a layer point, selecting Layer
+Controls pane and clicking on the canvas cause an error
+Platform: All
+Product: All Products
+Bug Description: Undoing adding a layer point, selecting Layer Controls pane
+and clicking on the canvas cause an error
+Workaround: None
+Issue: MO-5220 Wrong layers order after redo including in a group
+Platform: All
+Product: All Products
+Bug Description: If you group more than 2 layers and undo moving a layer
+outside of the group, it may not return to the right position
+Workaround: None
+Issue: MO-5210 Wrong surface detection for several selected layers
+Platform: All Platforms
+Product: All Products
+Bug Description: Try to select and move the surface of different layers in a
+multi-selection it will only let you move one.
+Workaround: Adjust one at a time
+Issue: MO-5166 There is no ability to toggle active for several
+selected layers
+Platform: All Platforms
+Product: All Products
+Bug Description: While you can apply all other right-click options to multiple
+layers, you can only apply "toggle active" to the layer you were
+over when you right clicked.
+Workaround: Choose "toggle active" on separate layers rather than a
+selection of layers.
+Issue: MO-5156 Wrong spline behavior in AdjustTrack
+Platform: All Platforms
+Product: All Products33Bug Description: Sometimes using AdjustTrack on a surface will not adjust the
+spline as well.
+Workaround: None
+Issue: MO-5150 Transform tool sometimes interferes with tangents
+Platform: All Platforms
+Product: All Products
+Bug Description: Sometimes the transform tool can get in the way of adjusting
+tangents
+Workaround: Turn off transform tool
+Issue: MO-5099 Dope Sheet: Cannot select several blocks of
+keyframes
+Platform: All Platforms
+Product: All Products
+Bug Description: You cannot use the shift key to marquee-select multiple blocks
+of keyframes
+Workaround: None
+Issue: MO-5090 An error appears in using Point Insertion tool for
+multiple selected layers
+Platform: All Platforms
+Product: All Products
+Bug Description: If you select 2 layers and try to use the point insertion tool
+you get the error: "Error: Could not find parent contour of the
+point."
+Workaround: Add points to one layer at a time
+Issue: MO-4225 Crash when resizing with no docked sidebar panes
+Platform: All Platforms
+Product: All Products
+Bug Description: Mocha crashes after the canvas is resized to zero-height.
+Workaround: None.
+Issue: MO-4312 Using Ctrl+Z to undo values on the Parameters tab
+doesn’t work34Platform: OS X and Windows: 32-bit
+Product: All Products
+Bug Description:
+Workaround: None.
+Issue: MO-190 "Pick Edge" tool selects and moves both Inner and
+Outer Spline Points
+Platform: All Platforms
+Product: All Products
+Bug Description: "Pick Edge" tool selects and moves both Inner and Outer
+Spline points if you first move the outer point.
+Workaround: Reselect.
+Issue: MO-162 Crop mask in Mocha Plug-in does not rescale
+correctly when jumping between different proxy resolutions
+Platform: All Platforms
+Product: All Plug-ins
+Bug Description: The Crop mask in the Clip Module of Mocha Pro/VR Plug-in
+does not rescale correctly when jumping between different
+proxy resolutions.
+Workaround: None.
+Issue: MO-159 Deselecting multiple shapes does not reselect them
+on undo
+Platform: All Platforms
+Product: All Products
+Bug Description: If you deselect multiple shapes, undoing the selection will only
+select one shape.
+Workaround: None.
+Issue: MO-137 Undo deselects shape
+Platform: All Platforms
+Product: All Products
+Bug Description: Using undo after tracking forward or backward de-selects the
+shape35Workaround: None.
+Issue: MO-79 Outer edge width (feather) remains consistent when
+layer scales
+Platform: All Platforms
+Product: All Products
+Bug Description: Scaling down a layer retains the same pixel width in the
+feathering.
+Workaround: Animate the feather with the scale to the desired width.
+Issue: MO-30 Exporting an AEP file to Premiere destroys Mocha
+project data
+Platform: All Platforms
+Product: Mocha Pro Adobe and Mocha AE Plug-Ins, Mocha VR Adobe
+Plug-in
+Bug Description: Exporting an AEP to Premiere keeps the effect on the layer,
+but destroys the Mocha project data.
+Workaround: Export the Mocha project from the Mocha GUI in the After
+Effects effect and merge it into the Mocha project in the
+Premiere version of the effect.
+Hardware Requirements
+Recommended Hardware
+•Processor: 3rd-generation Intel Core i7 or equivalent
+•Memory: 16+ GB
+•Disk: High-speed disk array or NVMe SSD
+•Graphics Card: NVDIA Quadro K4000 or equivalent
+•Monitor: 1920×1080 or higher
+•Network: Must have an enabled network adapter (Wi-Fi or Ethernet)
+Minimal Requirements
+•Processor: x86-6436•Memory: At least 4 GB
+•Graphics Card: For GPU tracking, must support OpenCL 1.2, for CPU tracking,
+OpenGL 2.1
+•Monitor: Minimum resolution 1200x800 pixels
+•Network: Must have an enabled network adapter (Wi-Fi or Ethernet)
+Working with high-resolution footage such as 4K is very demanding on system
+resources; a system with at least 16 GB of system memory and 2 GB of texture memory
+should be used.
+Software Requirements for Mocha AE Plugin
+Host Applications
+The Mocha AE Plugin only works in this version of After Effects.
+Operating System
+•Mac: macOS X 10.12, 10.13, 10.14 or 10.15 on 64-bit Intel. For GPU support,
+macOS 10.13-10.15 is recommended.
+•Windows:  Windows 7, Windows 8 and Windows 10 on x64.
+Community-supplied importers are known to work but are not supported by Imagineer/
+Boris FX.

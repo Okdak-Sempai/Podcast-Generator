@@ -1,0 +1,17 @@
+{
+  "titre": "Confiance ou Manipulation",
+  "auteur": "Tsugumi Ōba",
+  "date": "2025-04-03",
+    "lang": "fr"
+}
+
+[# Light : calme : 1] L, tu me surveilles toujours, pas vrai ?
+[# L : neutre : 2] C’est exact. Je dois garder un œil sur toi en permanence.
+[# Light : sarcastique : 3] Et tu penses que ça suffit pour prouver que je suis Kira ?
+[# L : distant : 4] Non, mais c’est suffisant pour me dire que tu n’es pas totalement innocent.
+[# Light : inquiet : 5] Tu joues à un jeu dangereux. Me soupçonner sans preuve, c’est risqué.
+[# L : posé : 6] Je préfère soupçonner un innocent que laisser Kira libre.
+[# Light : accusateur : 7] Et si j’étais vraiment Kira, tu serais déjà mort.
+[# L : calme : 8] Peut-être. Mais je suis encore en vie. Ce qui m’arrange pour continuer à t’observer.
+[# Light : théâtral : 9] Tu ne cherches pas la vérité, tu veux juste gagner.
+[# L : grave : 10] Je cherche la vérité. Mais si gagner est la seule façon d’y parvenir, alors je gagnerai.

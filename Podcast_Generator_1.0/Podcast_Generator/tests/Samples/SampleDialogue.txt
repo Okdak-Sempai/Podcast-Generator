@@ -1,0 +1,11 @@
+{
+  "titre": " Podcast title",
+  "auteur": "Name of Author or creator or None",
+  "date": "YYYY-MM-DD",
+  "lang": "en" or "fr" or "ja" or "zh-cn" or "zh-tw"
+}
+
+[# NAME : tone : SpeechNumber] Sentence.
+[#NAME :tone:SpeechNumber] Sentence.
+[# NAME : tone : SpeechNumber] Sentence.
+[#NAME :tone:SpeechNumber] Sentence.

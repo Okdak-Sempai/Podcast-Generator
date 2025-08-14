@@ -1,0 +1,17 @@
+{
+  "titre": "Sommes-nous encore humains ?",
+  "auteur": "Masamune Shirow",
+  "date": "2025-04-02",
+  "lang": "fr"
+}
+
+[# Major : neutre : 1] Quand tout ton corps est une machine, que reste-t-il de toi ?
+[# Batou : réfléchi : 2] Tes souvenirs. Ton esprit. Peut-être ton âme, si on y croit encore.
+[# Major : distant : 3] Les souvenirs peuvent être falsifiés. Les émotions aussi.
+[# Batou : posé : 4] Peut-être. Mais le doute lui, il est bien réel.
+[# Major : froid : 5] Je ne ressens plus rien face au monde. Est-ce ça, être un fantôme ?
+[# Batou : doux : 6] Ou est-ce juste la fatigue d’un monde trop bruyant…
+[# Major : analytique : 7] Si l’IA atteint la conscience, sommes-nous encore uniques ?
+[# Batou : pragmatique : 8] Alors il faudra arrêter de chercher à l’être.
+[# Major : curieuse : 9] Et si je décidais d’abandonner mon corps, tu me reconnaîtrais ?
+[# Batou : sincère : 10] Peu importe la coque. Je reconnaîtrai ton silence entre deux phrases.
