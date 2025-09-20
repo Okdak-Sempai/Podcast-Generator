@@ -1,68 +1,98 @@
-# Public Read‑Only License (Permission Required for Reuse)
 
-**Disclaimer:** This license is provided for general informational purposes and does not constitute legal advice. You should consult a qualified attorney to determine whether this text meets your particular needs and complies with the laws in your jurisdiction.
+Public Read‑Only Software License (Non‑Commercial, No Modifications)
 
----
+Copyright © 2025 Okdak‑Sempai. All rights reserved.
 
-## Copyright Notice
+**DISCLAIMER – Not Legal Advice**
+This license is provided as a convenience for informational purposes and does not constitute legal advice. Although it is intended to be a legally binding agreement, you should consult with a qualified lawyer to ensure that this license meets your needs and is enforceable under the laws that apply to you. Nothing in this document creates or constitutes an attorney–client relationship.
 
-Copyright © 2025 Okdak-Sempai. All rights reserved. This work is protected by applicable copyright laws, which grant the copyright holder exclusive rights to reproduce, adapt, distribute, display, and perform the work ([uspto.gov](https://www.uspto.gov/)). No rights are waived except as expressly stated herein.
+**1. Purpose and Scope**
+This license governs your access to and use of the source code and associated assets (the “Software”) provided in this repository. The Software is made available for **public reading only**. It is **not an open‑source license**. The purpose of this license is to allow others to inspect and learn from the code while maintaining full control over all other rights.
 
----
+**2. Limited Permissions Granted (Read‑Only)**
+Subject to your compliance with all of the terms and conditions in this license, the copyright holder grants you a limited, personal, non‑exclusive, non‑transferable, royalty‑free, revocable license to:
 
-## 1. Purpose and Scope
+- **Access and read** the Software for your own personal, non‑commercial purposes; and
+- **Discuss or review** the Software in writing or speech, provided that you do not reproduce or make available substantial portions of the Software.
 
-This license governs use of the source code contained in this repository. It is not an open‑source license and does not grant any freedoms beyond those expressly stated. The intent is to make the code publicly readable while retaining full control over any copying, modification, or distribution.
+No other rights are granted and all rights not expressly granted to you are reserved.
 
----
+**3. Prohibited Uses Without Prior Written Permission**
+You **must obtain prior written permission** from the copyright holder to perform any of the following actions with the Software or any portion of it:
 
-## 2. Permissions Granted
+- **Copy, reproduce, fork, clone, mirror or redistribute** the Software, in whole or in part, in any medium or format (including uploading to another repository or platform).
+- **Modify, adapt, translate, transform or create derivative works** of the Software or incorporate it into other software or projects.
+- **Use the Software for commercial purposes**, including selling, licensing, leasing, charging for access or use, or otherwise exploiting the Software or any derivative for monetary gain or other commercial advantage.
+- **Share or distribute** any modified or unmodified versions of the Software to others, including distributing copies within an organization.
+- **Use the Software to train machine‑learning models or for the development of artificial intelligence systems.**
+- **Apply technological protection measures or additional legal terms** that would restrict exercise of the limited permissions granted herein.
 
-You may, **without obtaining prior permission**, do the following:
+Any use of the Software beyond the limited permission to read and discuss it is **prohibited** unless you first obtain the copyright holder’s explicit written consent.
 
-- View and read the source code in this repository for your own personal, non‑commercial purposes.
-- Discuss the code in reviews, posts, or educational contexts, provided that you do not reproduce substantial portions of the code itself.
+**4. Requesting Permission**
+To request permission for any use beyond the limited read‑only permission granted above, you must contact the copyright holder and obtain a written licence agreement. The copyright holder reserves the right to grant or refuse any such request in their sole discretion. Absence of a response is not consent.
 
----
+**5. Enforcement and Termination**
+If you breach any of the terms of this license, your rights under this license automatically terminate. Unauthorized use of the Software constitutes copyright infringement and may subject you to civil and/or criminal penalties. The copyright holder may enforce their rights through take‑down notices (such as DMCA procedures) and legal actions seeking damages, injunctive relief and other remedies.
 
-## 3. Restrictions Without Written Permission
+**6. No Warranties; Limitation of Liability**
+THE SOFTWARE IS PROVIDED **“AS IS”** WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON‑INFRINGEMENT, ACCURACY, OR THE PRESENCE OR ABSENCE OF ERRORS. YOU ASSUME ALL RISKS ARISING FROM YOUR USE OF THE SOFTWARE. TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT WILL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF PROFITS, GOODWILL, USE, DATA OR OTHER INTANGIBLE LOSSES) ARISING OUT OF OR IN CONNECTION WITH YOUR USE OR INABILITY TO USE THE SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
 
-You may **not**, without the express written consent of the copyright holder:
+**7. Severability**
+If any provision of this license is held to be invalid or unenforceable by a court of competent jurisdiction, the remaining provisions shall remain in full force and effect.
 
-- Fork or clone this repository or create copies on any platform.
-- Reproduce or redistribute the code, in whole or in part, by any means or in any form.
-- Modify, adapt, translate, or create derivative works based on the code.
-- Integrate or use the code, or any adaptation of it, in any software project or product, whether open‑source, closed‑source, paid, or free.
-- Sell, license, or otherwise monetize the code or any derivative of it, including incorporation into services, applications, or educational materials.
+**8. No Waiver**
+Any failure by the copyright holder to exercise or enforce any right or provision of this license shall not constitute a waiver of such right or provision.
 
-**Any use beyond merely reading the code is strictly prohibited unless you have received explicit written authorization from the copyright holder.**
-
----
-
-## 4. Requesting Permission
-
-If you wish to engage in any activity listed in Section 3, you must request and obtain written permission. Permission may be granted or denied at the sole discretion of the copyright holder. To submit a request, contact: [your contact email or other method]. Lack of response should be treated as a denial.
-
----
-
-## 5. Enforcement
-
-Unauthorized use of the code constitutes copyright infringement. The copyright holder reserves the right to enforce their rights through any lawful means, including but not limited to Digital Millennium Copyright Act (DMCA) takedown notices and legal action. The exclusive rights conferred by copyright are freely transferable and may be licensed ([uspto.gov](https://www.uspto.gov/)).
+**9. Governing Law**
+This license shall be governed by and construed in accordance with the laws of the jurisdiction where the copyright holder resides, without regard to its conflict of law principles. You consent to the exclusive jurisdiction of the courts located in that jurisdiction to resolve any dispute arising under this license.
 
 ---
 
-## 6. No Warranty and Limitation of Liability
+Licence logicielle « Lecture publique » (usage non commercial, modifications interdites)
 
-The code is provided “AS IS” and WITHOUT WARRANTY of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and non‑infringement. In no event shall the copyright holder be liable for any claim, damages, or other liability arising from or related to your use of the code.
+Copyright © 2025 Okdak‑Sempai. Tous droits réservés.
 
----
+**AVERTISSEMENT – Pas de conseil juridique**
+Ce document est fourni à titre informatif et ne constitue pas un avis juridique. Bien qu’il soit destiné à être un accord juridiquement contraignant, vous devez consulter un avocat pour vérifier que cette licence répond à vos besoins et est applicable selon les lois qui vous sont applicables. Ce document ne crée pas de relation avocat–client.
 
-## 7. Severability
+**1. Objet et champ d’application**
+Cette licence régit votre accès et votre utilisation du code source et des ressources associées (le « Logiciel ») fournis dans ce dépôt. Le Logiciel est mis à disposition pour **lecture publique uniquement**. Il ne s’agit pas d’une licence open source. Le but de cette licence est de permettre à des tiers d’inspecter et d’apprendre du code tout en conservant le contrôle complet sur tous les autres droits.
 
-If any provision of this license is held to be invalid or unenforceable, the remaining provisions will remain in full force and effect.
+**2. Autorisations limitées accordées (lecture uniquement)**
+Sous réserve de votre respect de l’ensemble des conditions de cette licence, le titulaire des droits d’auteur vous accorde une licence limitée, personnelle, non exclusive, non transférable, gratuite et révocable pour :
 
----
+- **Accéder et lire** le Logiciel pour vos propres besoins personnels et non commerciaux ;
+- **Discuter ou commenter** le Logiciel oralement ou par écrit, à condition de ne pas reproduire ou mettre à disposition des portions substantielles du Logiciel.
 
-## 8. Non‑Waiver
+Aucun autre droit n’est accordé et tous les droits qui ne vous sont pas expressément accordés sont réservés.
 
-Failure or delay by the copyright holder to enforce any right or provision in this license will not constitute a waiver of that right or provision.
+**3. Utilisations interdites sans autorisation écrite préalable**
+Vous **devez obtenir une autorisation écrite préalable** du titulaire des droits d’auteur pour effectuer l’une des actions suivantes concernant le Logiciel ou une de ses parties :
+
+- **Copier, reproduire, forker, cloner, créer un miroir ou redistribuer** le Logiciel, en tout ou en partie, dans tout support ou format (y compris le téléchargement vers un autre dépôt ou plate‑forme).
+- **Modifier, adapter, traduire, transformer ou créer des œuvres dérivées** du Logiciel ou l’incorporer dans d’autres logiciels ou projets.
+- **Utiliser le Logiciel à des fins commerciales**, y compris vendre, concéder, louer, facturer l’accès ou l’utilisation, ou exploiter de toute autre manière le Logiciel ou toute œuvre dérivée à des fins lucratives ou à des fins d’avantage commercial.
+- **Partager ou distribuer** des versions modifiées ou non modifiées du Logiciel à des tiers, y compris au sein d’une organisation.
+- **Utiliser le Logiciel pour entraîner des modèles d’apprentissage automatique ou pour le développement de systèmes d’intelligence artificielle.**
+- **Appliquer des mesures techniques de protection ou des conditions juridiques supplémentaires** qui restreindraient l’exercice des autorisations limitées accordées dans la présente.
+
+Toute utilisation du Logiciel au‑delà du droit limité de lecture et de discussion est **interdite** sauf si vous obtenez d’abord le consentement écrit explicite du titulaire des droits d’auteur.
+
+**4. Demande d’autorisation**
+Pour demander l’autorisation de tout usage dépassant la permission limitée de lecture accordée ci‑dessus, vous devez contacter le titulaire des droits et obtenir un accord écrit de sa part. Le titulaire des droits d’auteur se réserve le droit d’accorder ou de refuser toute demande à sa seule discrétion. L’absence de réponse ne constitue pas une autorisation.
+
+**5. Application et résiliation**
+Si vous violez l’une des dispositions de cette licence, vos droits en vertu de cette licence prennent automatiquement fin. Toute utilisation non autorisée du Logiciel constitue une contrefaçon du droit d’auteur et peut vous exposer à des sanctions civiles et/ou pénales. Le titulaire des droits peut faire valoir ses droits par des notifications de retrait (telles que les procédures DMCA) et des actions en justice visant à obtenir des dommages‑intérêts, des injonctions et d’autres recours.
+
+**6. Absence de garanties ; limitation de responsabilité**
+LE LOGICIEL EST FOURNI **« TEL QUEL »** SANS AUCUNE GARANTIE D’AUCUNE SORTE, EXPRESSE OU IMPLICITE, NOTAMMENT SANS GARANTIES DE QUALITÉ MARCHANDE, D’ADÉQUATION À UN USAGE PARTICULIER, D’ABSENCE DE VIOLATION, D’EXACTITUDE OU D’ABSENCE D’ERREURS. VOUS ASSUMEZ TOUS LES RISQUES LIÉS À VOTRE UTILISATION DU LOGICIEL. DANS LA LIMITE MAXIMALE AUTORISÉE PAR LA LOI, EN AUCUN CAS LE TITULAIRE DES DROITS D’AUTEUR OU LES CONTRIBUTEURS NE SAURAIENT ÊTRE RESPONSABLES DE DOMMAGES INDIRECTS, INCIDENTS, SPÉCIAUX, EXEMPLAIRES OU CONSÉCUTIFS (NOTAMMENT, SANS QUE CETTE LISTE SOIT LIMITATIVE, LES DOMMAGES POUR PERTE DE PROFITS, DE CLIENTÈLE, D’UTILISATION, DE DONNÉES OU D’AUTRES PERTES INTANGIBLES) RÉSULTANT DE OU EN LIEN AVEC VOTRE UTILISATION OU VOTRE INCAPACITÉ D’UTILISER LE LOGICIEL, MÊME S’ILS ONT ÉTÉ AVERTIS DE LA POSSIBILITÉ DE TELS DOMMAGES.
+
+**7. Divisibilité**
+Si une disposition de cette licence est jugée invalide ou inapplicable par un tribunal compétent, les dispositions restantes resteront pleinement en vigueur.
+
+**8. Absence de renonciation**
+Le fait que le titulaire des droits d’auteur n’exerce pas ou ne fasse pas appliquer un droit ou une disposition de cette licence ne constitue pas une renonciation à ce droit ou à cette disposition.
+
+**9. Droit applicable**
+Cette licence est régie et interprétée conformément aux lois du lieu de résidence du titulaire des droits d’auteur, sans tenir compte de ses principes de conflits de lois. Vous acceptez la compétence exclusive des tribunaux situés dans ce lieu pour résoudre tout différend découlant de cette licence.
